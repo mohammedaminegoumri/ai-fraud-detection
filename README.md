@@ -1,26 +1,43 @@
-# AI Fraud Detection System
+# 🚀 AI Fraud Detection System
 
-🚀 Machine Learning model to detect **credit card fraud** with high precision.
+Machine Learning model to **detect and prevent credit card fraud** with high accuracy.
 
-## Features
-- Handles highly imbalanced dataset (fraud is ~0.17%)
-- Multiple ML models (Random Forest, XGBoost, LightGBM)
-- Advanced evaluation metrics (Precision, Recall, F1, AUC-PR)
+## ✨ Features
+- Handles extreme class imbalance (fraud = 0.17%)
+- Uses SMOTE + Random Forest (can easily swap to XGBoost/LightGBM)
+- Strong focus on **Precision & Recall** (critical for fraud)
 - Feature importance analysis
 
-## Dataset
-We use the famous [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) dataset from Kaggle.
+## 📊 Dataset
+We are using the popular **Credit Card Fraud Detection** dataset:
+→ [Kaggle - Credit Card Fraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
-## Project Structure
+## 🚀 Quick Start
+
+1. Clone the repo
+```bash
+git clone https://github.com/mohammedaminegoumri/ai-fraud-detection.git
+cd ai-fraud-detection
 ```
-ai-fraud-detection/
-├── README.md
-├── requirements.txt
-├── data/
-├── notebooks/
-├── src/
-│   ├── data_preprocessing.py
-│   ├── train.py
-│   └── evaluate.py
-└── models/
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
 ```
+
+3. Download the dataset from Kaggle and put `creditcard.csv` inside the `data/` folder
+
+4. Train the model
+```bash
+python src/train.py
+```
+
+## Next Steps (we can add them together)
+- Try XGBoost / LightGBM
+- Add Streamlit web demo
+- Model explainability (SHAP)
+- API with FastAPI
+- Real-time fraud scoring
+
+---
+**Ready to start coding?** Just say what you want to do next!
