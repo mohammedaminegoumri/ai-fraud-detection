@@ -2,20 +2,29 @@
 
 Hey, this is **my** personal project where I built a Machine Learning system to detect fraudulent credit card transactions.
 
-Real fraud datasets are extremely imbalanced, so I practiced using **SMOTE** and proper EDA.
+I worked on handling heavily imbalanced data using **SMOTE** and did proper Exploratory Data Analysis (EDA).
 
-## What I added recently:
-- Full **Exploratory Data Analysis (EDA)** visualizations
-- **SMOTE** before/after comparison plots
-- Clean, well-commented code
+## 📊 Visualizations
 
-## Visualizations (Images)
-When you run the script, it automatically creates an `images/` folder containing:
+Here are the plots I generated:
 
-- `class_distribution_before_smote.png` → Shows how unbalanced the original data is
-- `smote_before_after.png` → Before vs After applying SMOTE
-- `transaction_amount_distribution.png`
-- `correlation_heatmap.png`
+![Class Distribution Before SMOTE](images/class_distribution_before_smote.png)
+
+![Transaction Amount Distribution by Class](images/transaction_amount_distribution.png)
+
+![Fraud Rate by Hour of Day](images/fraud_by_hour.png)
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+![SMOTE Before vs After](images/smote_before_after.png)
+
+![PCA Projection of Transactions](images/pca_projection.png)
+
+## What I did:
+- Full EDA with multiple visualizations (Class distribution, Amount, Time patterns, Correlation)
+- Applied **SMOTE** to balance the classes
+- Used PCA for dimensionality reduction visualization
+- Trained a Random Forest model with good performance
 
 ## How to run it
 
@@ -30,15 +39,15 @@ When you run the script, it automatically creates an `images/` folder containing
    pip install -r requirements.txt
    ```
 
-3. Download the dataset from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud) and put `creditcard.csv` inside a `data/` folder.
+3. (Recommended) Download the full dataset from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud) and put `creditcard.csv` inside a `data/` folder.
 
-4. Run the main script (this will generate the images + train the model):
+4. Run the script:
    ```bash
    python fraud_detection.py
    ```
 
-The images will be saved in the `images/` folder.
+The script will automatically create the `images/` folder and save all the plots shown above.
 
-Let me know what you think or if you want me to add a web app / Streamlit version next!
+Let me know if you want me to add a **Streamlit web app** or a FastAPI endpoint next!
 
 — Mohammed Amine
