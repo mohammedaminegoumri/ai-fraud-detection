@@ -1,54 +1,44 @@
-# Credit Card Fraud Detection
+# Credit Card Fraud Detection with AI
 
-Hi, this is my personal project on detecting fraud in credit card transactions using Machine Learning.
+Hey, this is **my** personal project where I built a Machine Learning system to detect fraudulent credit card transactions.
 
-I made this to practice handling highly imbalanced data, which is a big challenge in real-world fraud detection.
+Real fraud datasets are extremely imbalanced, so I practiced using **SMOTE** and proper EDA.
 
-## Features
-- Loads credit card transaction data
-- Uses **SMOTE** to balance the classes (fraud vs normal)
-- Trains a RandomForest model
-- Full EDA (Exploratory Data Analysis) with visualizations
+## What I added recently:
+- Full **Exploratory Data Analysis (EDA)** visualizations
+- **SMOTE** before/after comparison plots
+- Clean, well-commented code
 
-## Visualizations
-I added a script that generates nice plots automatically:
+## Visualizations (Images)
+When you run the script, it automatically creates an `images/` folder containing:
 
-Run this to create the images:
-```bash
-python eda_visualization.py
-```
-
-This will create an `images/` folder with:
-- `class_distribution.png` → Shows how imbalanced the data is
-- `smote_effect.png` → Before vs After SMOTE
-- `amount_distribution.png`
+- `class_distribution_before_smote.png` → Shows how unbalanced the original data is
+- `smote_before_after.png` → Before vs After applying SMOTE
+- `transaction_amount_distribution.png`
 - `correlation_heatmap.png`
 
-## How to use it
+## How to run it
 
-1. Clone this repository:
+1. Clone the repo:
    ```bash
    git clone https://github.com/mohammedaminegoumri/ai-fraud-detection.git
+   cd ai-fraud-detection
    ```
 
-2. Install the packages:
+2. Install requirements:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Download the dataset from Kaggle (`creditcard.csv`) and put it in the `data/` folder.
-   Link: https://www.kaggle.com/mlg-ulb/creditcardfraud
+3. Download the dataset from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud) and put `creditcard.csv` inside a `data/` folder.
 
-4. Generate visualizations:
-   ```bash
-   python eda_visualization.py
-   ```
-
-5. Train the model:
+4. Run the main script (this will generate the images + train the model):
    ```bash
    python fraud_detection.py
    ```
 
-Let me know if you have any suggestions to improve it!
+The images will be saved in the `images/` folder.
+
+Let me know what you think or if you want me to add a web app / Streamlit version next!
 
 — Mohammed Amine
