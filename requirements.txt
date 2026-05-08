@@ -8,3 +8,5 @@ seaborn
 imbalanced-learn
 joblib
 jupyter
+streamlit
+plotly
